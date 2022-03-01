@@ -31,7 +31,6 @@ export default function Home() {
       })
   }, [userName])
 
-  if (isLoading) return <Loading />
   if (!data) return <p>No profile data</p>
 
   return (
@@ -46,7 +45,7 @@ export default function Home() {
         handleClick={handleClick}
         userRef={userRef}
       />
-      <GithubUser data={data}/>
+      {isLoading ? <Loading /> : <GithubUser data={data} />}
       {console.log(data)}
     </div>
   )

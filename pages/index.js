@@ -31,8 +31,6 @@ export default function Home() {
       })
   }, [userName])
 
-  if (!data) return <p>No profile data</p>
-
   return (
     <div className="min-h-screen bg-gray-50 py-7 dark:bg-[#1e253f]">
       <Head>

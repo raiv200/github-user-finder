@@ -26,7 +26,7 @@ const UserStats = ({repos,followers ,following}) => {
         Following
       </h4>
       <p className="font-mono text-lg font-extrabold text-gray-700 dark:text-gray-50 ">
-        {followers? followers : "Not Available"}
+        {following? following : "Not Available"}
       </p>
     </div>
   </div>

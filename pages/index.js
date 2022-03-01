@@ -29,7 +29,11 @@ export default function Home() {
         setData(data)
         setLoading(false)
       })
-  }, [userName])
+  }, [userName]);
+
+  if(!data) (
+  <p>No Profile data.</p>
+  )
 
   return (
     <div className="min-h-screen bg-gray-50 py-7 dark:bg-[#1e253f]">
@@ -43,7 +47,7 @@ export default function Home() {
         handleClick={handleClick}
         userRef={userRef}
       />
-     <GithubUser data={data} />
+     {isLoading ? <Loading /> : <GithubUser data={data} />}
     </div>
   )
 }

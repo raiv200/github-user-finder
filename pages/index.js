@@ -45,8 +45,7 @@ export default function Home() {
         handleClick={handleClick}
         userRef={userRef}
       />
-      {isLoading ? <Loading /> : <GithubUser data={data} />}
-      {console.log(data)}
+     <GithubUser data={data} />
     </div>
   )
 }

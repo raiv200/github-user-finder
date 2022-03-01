@@ -2,9 +2,9 @@ import Avatar from './Avatar'
 
 const UserProfile = ({ name, date, username ,imageURL}) => {
   return (
-    <div className=" flex w-full items-center space-x-4  md:justify-evenly md:space-x-6">
+    <div className=" flex flex-col md:flex-row w-full   items-center space-y-6 space-x-4  md:justify-evenly md:space-x-6">
       <Avatar imageURL={imageURL} />
-      <div className="flex flex-1 items-center space-x-6 px-2 md:flex-1 md:items-start md:justify-between">
+      <div className="flex items-center w-full justify-around space-x-6 px-2  md:flex-1 md:items-start md:justify-between">
         <h2 className="w-32 md:w-44 font-mono text-lg font-bold text-gray-800 dark:text-gray-50 md:text-2xl">
           {name}{' '}
           <span className="inline-block font-mono text-sm text-blue-400">

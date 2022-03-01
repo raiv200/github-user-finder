@@ -6,7 +6,6 @@ import { useState, useRef, useEffect } from 'react'
 import { Loading } from '../components/Loading'
 
 export default function Home() {
-  // const  newDate =date.toDateString(4,10).slice(4,15);
   let API = 'https://api.github.com/users/octocat'
 
   const userRef = useRef(null)

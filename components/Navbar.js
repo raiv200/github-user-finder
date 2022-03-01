@@ -45,7 +45,7 @@ const Navbar = () => {
   }
 
   return (
-    <header className="align-items mx-auto mt-4 flex max-w-md justify-between space-x-4 rounded-md p-2 md:max-w-2xl">
+    <header className="align-items mx-auto mt-4 flex max-w-sm justify-between space-x-4 rounded-md p-2 md:max-w-2xl">
       <div>
         <Logo />
       </div>

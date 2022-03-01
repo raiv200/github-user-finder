@@ -4,7 +4,7 @@ import { SearchIcon } from '@heroicons/react/outline'
 const SearchBar = ({userName, handleClick , userRef}) => {
  
   return (
-    <div className=" align-items mx-auto mt-4 flex max-w-md justify-between space-x-2 rounded-lg bg-gray-200 p-2 pb-2 transition duration-300 ease-in dark:bg-[#2b365e] md:max-w-2xl">
+    <div className=" align-items mx-auto mt-4 flex max-w-sm justify-between space-x-2 rounded-lg bg-gray-200 p-2 pb-2 transition duration-300 ease-in dark:bg-[#2b365e] md:max-w-2xl">
       <SearchIcon  className="mt-3 ml-2 h-6 w-6 text-[#5176ff] dark:text-blue-600" />
       <input
         name="search"

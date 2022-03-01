@@ -42,12 +42,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      
+      {isLoading ? <Loading /> :
+      <>
       <SearchBar
         userName={userName}
         handleClick={handleClick}
         userRef={userRef}
       />
-     {isLoading ? <Loading /> : <GithubUser data={data} />}
+      <GithubUser data={data} />
+      </>
+      }
     </div>
   )
 }

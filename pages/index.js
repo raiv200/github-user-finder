@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50 py-7 dark:bg-[#1e253f]">
       <Head>
-        <title>GitHub User Finder</title>
+        <title>GitHub User Finder App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />

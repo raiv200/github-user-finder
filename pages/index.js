@@ -14,7 +14,13 @@ export default function Home() {
   const [isLoading, setLoading] = useState(false)
 
   function handleClick() {
-    setUserName(userRef.current.value)
+    setUserName(userRef.current.value);
+  }
+
+  function handleKeyPress(e){
+    if(e.key ==='Enter'){
+      setUserName(userRef.current.value);
+    }
   }
   useEffect(() => {
     setLoading(true)
@@ -48,6 +54,7 @@ export default function Home() {
         userName={userName}
         handleClick={handleClick}
         userRef={userRef}
+        handleKeyPress={handleKeyPress}
       />
       <GithubUser data={data} />
       </>

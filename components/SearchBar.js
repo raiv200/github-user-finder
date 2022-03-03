@@ -1,7 +1,7 @@
 import { SearchIcon } from '@heroicons/react/outline'
 
 
-const SearchBar = ({userName, handleClick , userRef}) => {
+const SearchBar = ({ handleClick ,handleKeyPress, userRef}) => {
  
   return (
     <div className=" align-items mx-auto mt-4 flex max-w-sm justify-between space-x-2 rounded-lg bg-gray-200 p-2 pb-2 transition duration-300 ease-in dark:bg-[#2b365e] md:max-w-2xl">
@@ -11,6 +11,7 @@ const SearchBar = ({userName, handleClick , userRef}) => {
         ref={userRef}
         placeholder="Search GitHub username....."
         className="text-md mt-1 w-[400px] rounded-md bg-gray-200 px-2 py-2 font-mono leading-6 text-slate-500 placeholder-neutral-400 transition  duration-300 ease-in focus:outline-none dark:bg-[#2b365e] dark:text-gray-50 dark:placeholder-slate-500"
+        onKeyPress={handleKeyPress}
       />
       <button
         onClick={handleClick}
